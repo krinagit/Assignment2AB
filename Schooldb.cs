@@ -9,5 +9,6 @@ namespace Assignment_2ab
 {
     public class Schooldb
     {
+
     }
 }
