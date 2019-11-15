@@ -9,6 +9,7 @@ namespace Assignment_2ab
 {
 	public partial class students : System.Web.UI.Page
 	{
+        //refference taken from in class example done by chrintine bittle
 		protected void Page_Load(object sender, EventArgs e)
 		{
             students_result.InnerHtml = "";
@@ -35,8 +36,8 @@ namespace Assignment_2ab
                 students_result.InnerHtml += "<div class=\"listitem\">";
                 string studentid = row["STUDENTID"];
 
-                string studentfirstname = row["STUDENTFNAME"];
-                students_result.InnerHtml += "<div class=\"col4\">" + studentfirstname + "</div>";
+                string studentfirstname = row["STUDENTFNAME"]; 
+                students_result.InnerHtml += "<div class=\"col4\"><a href=\"ShowStudent.aspx?studentid=" + studentid + "\">" + studentfirstname + "</a></div>";
 
                 string studentlastname = row["STUDENTLNAME"];
                 students_result.InnerHtml += "<div class=\"col4\">" + studentlastname + "</div>";
