@@ -14,10 +14,10 @@
             <h2 id="title">ADMINISTRATION</h2>
             <div id="header-nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Students</a></li>
-                <li><a href="#">Teachers</a></li>
-                <li><a href ="#">Classes</a></li>
+                <li><a href="Home.aspx">Home</a></li>
+                <li><a href="students.aspx">Students</a></li>
+                <li><a href="teachers.aspx">Teachers</a></li>
+                <li><a href ="classlist.aspx">Classes</a></li>
             </ul>
            </div>
         </div>
@@ -31,10 +31,10 @@
     <footer>
         <div class="main-nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Students</a></li>
-                <li><a href="#">Teachers</a></li>
-                <li><a href ="#">Classes</a></li>
+                <li><a href="Home.aspx">Home</a></li>
+                <li><a href="students.aspx">Students</a></li>
+                <li><a href="teachers.aspx">Teachers</a></li>
+                <li><a href ="classlist.aspx">Classes</a></li>
             </ul>
         </div>
     </footer>

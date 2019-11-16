@@ -143,6 +143,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Home.aspx" />
+    <Content Include="classlist.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -175,7 +176,7 @@
     <Content Include="ShowStudent.aspx" />
     <Content Include="Site.Master" />
     <Content Include="students.aspx" />
-    <Content Include="Teachers.aspx" />
+    <Content Include="teachers.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -238,12 +239,12 @@
     <Compile Include="students.aspx.designer.cs">
       <DependentUpon>students.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Teachers.aspx.cs">
-      <DependentUpon>Teachers.aspx</DependentUpon>
+    <Compile Include="teachers.aspx.cs">
+      <DependentUpon>teachers.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Teachers.aspx.designer.cs">
-      <DependentUpon>Teachers.aspx</DependentUpon>
+    <Compile Include="teachers.aspx.designer.cs">
+      <DependentUpon>teachers.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
@@ -258,6 +259,13 @@
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="classlist.aspx.cs">
+      <DependentUpon>classlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="classlist.aspx.designer.cs">
+      <DependentUpon>classlist.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
