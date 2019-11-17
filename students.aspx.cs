@@ -24,9 +24,9 @@ namespace Assignment_2ab
 
             if(search_key != "")
             {
-                query += "WHERE STUDENTFNAME LIKE '%" + search_key + "%'";
-                query += "OR STUDENTLNAME LIKE '%" + search_key + "%'";
-                query += "OR STUDENTNUMBER LIKE '%" + search_key + "%'";
+                query += " WHERE STUDENTFNAME LIKE '%" + search_key + "%'";
+                query += " OR STUDENTLNAME LIKE '%" + search_key + "%'";
+                query += " OR STUDENTNUMBER LIKE '%" + search_key + "%'";
             }
 
             var db = new Schooldb();

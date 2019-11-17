@@ -25,12 +25,12 @@ namespace Assignment_2ab
 
             if (search_key != "")
             {
-                query += "WHERE TEACHERID LIKE '%" + search_key + "%'";
-                query += "OR TEACHERFNAME LIKE '%" + search_key + "%'";
-                query += "OR TEACHERLNAME LIKE '%" + search_key + "%'";
-                query += "OR EMPLOYEENUMBER LIKE '%" + search_key + "%'";
-                query += "OR HIREDATE LIKE '%" + search_key + "%'";
-                query += "OR SALARY LIKE '%" + search_key + "%'";
+                query += " WHERE TEACHERID LIKE '%" + search_key + "%'";
+                query += " OR TEACHERFNAME LIKE '%" + search_key + "%'";
+                query += " OR TEACHERLNAME LIKE '%" + search_key + "%'";
+                query += " OR EMPLOYEENUMBER LIKE '%" + search_key + "%'";
+                query += " OR HIREDATE LIKE '%" + search_key + "%'";
+                query += " OR SALARY LIKE '%" + search_key + "%'";
             }
 
             var db = new Schooldb();
@@ -39,6 +39,7 @@ namespace Assignment_2ab
             {
                 teachers_result.InnerHtml += "<div class=\"listitem\">";
                 string teacherid = row["TEACHERID"];
+                teachers_result.InnerHtml += "<div class=\"col4\">" + teacherid + "</div>";
 
                 string teacherfname = row["TEACHERFNAME"];
                 teachers_result.InnerHtml += "<div class=\"col4\"><a href=\"ShowTeacher.aspx?teacherid=" + teacherid + "\">" + teacherfname + "</a></div>";

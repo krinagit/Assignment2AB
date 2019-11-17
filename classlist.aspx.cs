@@ -23,11 +23,11 @@ namespace Assignment_2ab
 
             if (search_key != "")
             {
-                query += "WHERE CLASSID LIKE '%" + search_key + "%'";
-                query += "OR CLASSCODE LIKE '%" + search_key + "%'";
-                query += "OR CLASSNAME LIKE '%" + search_key + "%'";
+                query += " WHERE CLASSID LIKE '%" + search_key + "%'";
+                query += " OR CLASSCODE LIKE '%" + search_key + "%'";
+                query += " OR CLASSNAME LIKE '%" + search_key + "%'";
             }
-
+            //sql_debugger.InnerHtml += query; 
             var db = new Schooldb();
             List<Dictionary<String, String>> rs = db.List_Query(query);
             foreach (Dictionary<String, String> row in rs)
