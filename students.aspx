@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="students.aspx.cs" Inherits="Assignment_2ab.students" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="students_list" ContentPlaceHolderID="MainContent" runat="server">
     <h1>STUDENTS</h1>
     <div id="student_nav">
         <asp:label for="student_search" runat="server">SEARCH:</asp:label>

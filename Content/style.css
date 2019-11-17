@@ -1,6 +1,7 @@
-﻿.main-content {
+﻿.main-content, .main-nav {
     max-width: 1080px;
     margin: 0 auto;
+    text-align:center;
 }
 
 header, footer {
@@ -21,12 +22,12 @@ footer {
     width: 100%;
 }
 
-/*.listitem {
+.listitem {
     background: #fefefe;
     padding: 12px 5%;
     width: 90%;
     overflow: hidden;
-}*/
+}
 
 .listitem:after {
     clear: both;
@@ -52,6 +53,7 @@ footer {
 .col4last {
     margin-right: 0%;
 }
+
 
 
 
@@ -107,11 +109,11 @@ a {
     display: inline-block;
 }
 
-.main-nav #header-nav { 
+.main-nav #header-nav {
     position: absolute;
     top: 3em;
     right: 2em;
-} 
+}
 
 /* MAIN CONTENT*/
 .main-content {
