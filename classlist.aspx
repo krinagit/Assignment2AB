@@ -6,12 +6,11 @@
         <asp:label for="classes_search" runat="server">SEARCH:</asp:label>
         <asp:TextBox ID="classes_search" runat="server"></asp:TextBox>
         <asp:Button runat="server" text="submit" />
-        <asp:label for="semester" runat="server">Choose a semester:</asp:label>
+        <asp:label for="semester" runat="server" AutoPostBack="true">Choose a semester:</asp:label>
         <asp:DropDownList runat="server" id="semester">
             <asp:ListItem Text="All" Value="all"></asp:ListItem>
-            <asp:ListItem Text="Fall 2019" Value="fall2019"></asp:ListItem>
-            <asp:ListItem Text="Winter 2020" Value="winter2020"></asp:ListItem>
-            <asp:ListItem Text="Fall 2020" Value="fall2020"></asp:ListItem>
+            <asp:ListItem Text="Fall" Value="09"></asp:ListItem>
+            <asp:ListItem Text="Winter" Value="01"></asp:ListItem>
         </asp:DropDownList>
 
         <div id="sql_debugger" runat="server"></div>
