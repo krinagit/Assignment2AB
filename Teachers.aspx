@@ -1,3 +1,24 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="teachers.aspx.cs" Inherits="Assignment_2ab.Teachers" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <h1>TEACHERS</h1>
+    <div id="teachers_nav">
+        <asp:label for="teachers_search" runat="server">SEARCH:</asp:label>
+        <asp:TextBox ID="teachers_search" runat="server"></asp:TextBox>
+        <asp:Button runat="server" text="submit" />
+
+        <div id="sql_debugger" runat="server"></div>
+    </div>
+
+    <div class="_table" runat="server">
+        <div class="listitem">
+            <div class="col4">TEACHER ID</div>
+            <div class="col4">TEACHER FNAME</div>
+            <div class="col4">TEACHER LNAME</div>
+            <div class="col4">EMPLOYEE NUMBER</div>
+            <div class="col4">HIREDATE</div>
+            <div class="col4last">SALARY</div>
+        </div>
+
+        <div id="teachers_result" runat="server"></div>
+    </div>
 </asp:Content>
