@@ -47,6 +47,8 @@ namespace Assignment_2ab
                 string classenddate = row["FINISHDATE"];
                 classes_result.InnerHtml += "<div class=\"col4last\">" + classenddate  + "</div>";
 
+                classes_result.InnerHtml += "</div>";
+
 
             }
 

@@ -48,6 +48,8 @@ namespace Assignment_2ab
                 string enrolmentdate = row["ENROLMENTDATE"];
                 students_result.InnerHtml += "<div class=\"col4last\">" + enrolmentdate + "</div>";
 
+                students_result.InnerHtml += "</div>";
+
 
             }
 		}
