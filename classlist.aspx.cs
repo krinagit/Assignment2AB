@@ -9,14 +9,14 @@ namespace Assignment_2ab
 {
     public partial class WebForm2 : System.Web.UI.Page
     {
-
-        
+       
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             classes_result.InnerHtml = "";
-
-            string search_key = "";
             string Semester = "all";
+            string search_key = "";
+            
         
             if (Page.IsPostBack)
             {
@@ -30,6 +30,7 @@ namespace Assignment_2ab
             {
                 query += " WHERE MONTH(STARTDATE) = " + Semester;
 
+            //INITIAL WHERE SO BOTH  SEARCH AND SEMESTER CAN RUN WITHOUT REPEATING THE WHERE IN THE SEARCH KEY IF
             } else {
                 query += " WHERE MONTH(STARTDATE) =01 OR MONTH(STARTDATE) =09 ";
             }
