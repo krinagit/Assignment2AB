@@ -17,7 +17,7 @@ namespace Assignment_2ab
             if (valid)
             {
                 var db = new Schooldb();
-                Dictionary<String, String> student_record = db.FindClass(Int32.Parse(teacherid));
+                Dictionary<String, String> student_record = db.FindTeacher(Int32.Parse(teacherid));
 
                 if (student_record.Count > 0)
                 {
