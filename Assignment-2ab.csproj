@@ -174,9 +174,9 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="ShowStudent.aspx" />
-    <Content Include="showTeacher.aspx" />
     <Content Include="Site.Master" />
     <Content Include="students.aspx" />
+    <Content Include="teacherData.aspx" />
     <Content Include="teachers.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -205,13 +205,6 @@
     <Compile Include="ShowStudent.aspx.designer.cs">
       <DependentUpon>ShowStudent.aspx</DependentUpon>
     </Compile>
-    <Compile Include="showTeacher.aspx.cs">
-      <DependentUpon>showTeacher.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="showTeacher.aspx.designer.cs">
-      <DependentUpon>showTeacher.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -232,6 +225,13 @@
     </Compile>
     <Compile Include="students.aspx.designer.cs">
       <DependentUpon>students.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teacherData.aspx.cs">
+      <DependentUpon>teacherData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacherData.aspx.designer.cs">
+      <DependentUpon>teacherData.aspx</DependentUpon>
     </Compile>
     <Compile Include="teachers.aspx.cs">
       <DependentUpon>teachers.aspx</DependentUpon>

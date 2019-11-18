@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Assignment_2ab
 {
-    public partial class showTeacher : System.Web.UI.Page
+    public partial class teacherData : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -17,15 +17,16 @@ namespace Assignment_2ab
             if (valid)
             {
                 var db = new Schooldb();
-                Dictionary<String, String> student_record = db.FindTeacher(Int32.Parse(teacherid));
+                Dictionary<String, String> teacher_data = db.FindClass(Int32.Parse(teacherid));
 
-                if (student_record.Count > 0)
+                if (teacher_data.Count > 0)
                 {
-                    teacher_fname.InnerHtml = student_record["TEACHERFNAME"];
-                    teacher_lname.InnerHtml = student_record["TEACHERLNAME"];
-                    employee_number.InnerHtml = student_record["EMPLOYEENUMBER"];
-                    hire_date.InnerHtml = student_record["HIREDATE"];
-                    salary.InnerHtml = student_record["SALARY"];
+                   
+                    teacher_fname.InnerHtml = teacher_data["TEACHERFNAME"];
+                    teacher_lname.InnerHtml = teacher_data["TEACHERLNAME"];
+                    employee_number.InnerHtml = teacher_data["EMPLOYEENUMBER"];
+                    hire_date.InnerHtml = teacher_data["HIREDATE"];
+                    salary.InnerHtml = teacher_data["SALARY"];
                 }
                 else
                 {
@@ -34,8 +35,9 @@ namespace Assignment_2ab
             }
             if (!valid)
             {
-                teacher_details.InnerHtml = "Wrong details entered!!";
+                teacher_data.InnerHtml = "Wrong details entered!!";
             }
+
         }
     }
 }
