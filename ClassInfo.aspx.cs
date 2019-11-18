@@ -13,11 +13,11 @@ namespace Assignment_2ab
         {
             bool valid = true;
             string classid = Request.QueryString["classid"];
-            if (String.IsNullOrEmpty(classid)) valid = false;
+            //if (String.IsNullOrEmpty(classid)) valid = false;
             if (valid)
             {
                 var db = new Schooldb();
-                Dictionary<String, String> class_info = db.FindClass(Int32.Parse(classid));
+                Dictionary<String, String> class_info = db.FindClass(int.Parse(classid));
 
                 if (class_info.Count > 0)
                 {

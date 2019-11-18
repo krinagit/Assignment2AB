@@ -181,7 +181,7 @@ namespace Assignment_2ab
             try
             {
                 //Build a custom query with the id information provided
-                string query = "CLASSCODE, CLASSNAME ,STARTDATE, FINISHDATE, CONCAT(TEACHERLNAME, \", \", TEACHERFNAME )AS TEACHERNAME ";
+                string query = "SELECT CLASSCODE, CLASSNAME, STARTDATE, FINISHDATE, CONCAT(TEACHERLNAME, \", \", TEACHERFNAME) AS TEACHERNAME ";
                 query += "FROM CLASSES c JOIN TEACHERS t ON c.TEACHERID = t.TEACHERID ";
                 query += "WHERE CLASSID =" + id;
 
@@ -220,7 +220,7 @@ namespace Assignment_2ab
             catch (Exception ex)
             {
                 //If something (anything) goes wrong with the try{} block, this block will execute
-                Debug.WriteLine("Something went wrong in the find Student method!");
+                Debug.WriteLine("Something went wrong in the find Class method!");
                 Debug.WriteLine(ex.ToString());
             }
 
