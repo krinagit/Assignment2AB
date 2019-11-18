@@ -169,5 +169,66 @@ namespace Assignment_2ab
             return student;
         }
 
+        //The objective is find a particular class based on the class Id
+        public Dictionary<String, String> FindClass(int id)
+        {
+            //Utilize the connection string
+            MySqlConnection Connect = new MySqlConnection(ConnectionString);
+            //create a "blank" class so that our method can return something if we're not successful catching student data
+            Dictionary<String, String>classinfo = new Dictionary<String, String>();
+
+            //we will try to grab student data from the database, if we fail, a message will appear in Debug>Windows>Output dialogue
+            try
+            {
+                //Build a custom query with the id information provided
+                string query = "CLASSCODE, CLASSNAME ,STARTDATE, FINISHDATE, CONCAT(TEACHERLNAME, \", \", TEACHERFNAME )AS TEACHERNAME ";
+                query += "FROM CLASSES c JOIN TEACHERS t ON c.TEACHERID = t.TEACHERID ";
+                query += "WHERE CLASSID =" + id;
+
+                Debug.WriteLine("Connection Initialized...");
+                //open the db connection
+                Connect.Open();
+                //Run out query against the database
+                MySqlCommand cmd = new MySqlCommand(query, Connect);
+                //grab the result set
+                MySqlDataReader resultset = cmd.ExecuteReader();
+
+                //Create a list of students (although we're only trying to get 1)
+                List<Dictionary<String, String>> Classes = new List<Dictionary<String, String>>();
+
+                //read through the result set
+                while (resultset.Read())
+                {
+                    //information that will store a single student
+                    Dictionary<String, String> Class = new Dictionary<String, String>();
+
+                    //Look at each column in the result set row, add both the column name and the column value to our Student dictionary
+                    for (int i = 0; i < resultset.FieldCount; i++)
+                    {
+                        Debug.WriteLine("Attempting to transfer data of " + resultset.GetName(i));
+                        Debug.WriteLine("Attempting to transfer data of " + resultset.GetString(i));
+                        Class.Add(resultset.GetName(i), resultset.GetString(i));
+
+                    }
+                    //Add the student to the list of students
+                    Classes.Add(Class);
+                }
+
+                classinfo = Classes[0]; //get the first student
+
+            }
+            catch (Exception ex)
+            {
+                //If something (anything) goes wrong with the try{} block, this block will execute
+                Debug.WriteLine("Something went wrong in the find Student method!");
+                Debug.WriteLine(ex.ToString());
+            }
+
+            Connect.Close();
+            Debug.WriteLine("Database Connection Terminated.");
+
+            return classinfo;
+        }
+
     }
 }

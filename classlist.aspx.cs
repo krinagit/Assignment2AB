@@ -41,7 +41,7 @@ namespace Assignment_2ab
                 query += " OR CLASSCODE LIKE '%" + search_key + "%'";
                 query += " OR CLASSNAME LIKE '%" + search_key + "%')";
             }
-            sql_debugger.InnerHtml += query; 
+            //sql_debugger.InnerHtml += query; 
             var db = new Schooldb();
             List<Dictionary<String, String>> rs = db.List_Query(query);
             foreach (Dictionary<String, String> row in rs)
@@ -50,7 +50,7 @@ namespace Assignment_2ab
                 string classid = row["CLASSID"];
 
                 string classcode = row["CLASSCODE"];
-                classes_result.InnerHtml += "<div class=\"col4\">" + classcode + "</div>";
+                classes_result.InnerHtml += "<div class=\"col4\"><a href=\"ClassInfo.aspx?classid=" + classid + "\">" + classcode + "</a></div>"; ;
 
                 string classname = row["CLASSNAME"];
                 classes_result.InnerHtml += "<div class=\"col4\">" + classname + "</div>";

@@ -142,6 +142,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Home.aspx" />
     <Content Include="classlist.aspx" />
+    <Content Include="ClassInfo.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -258,6 +259,13 @@
     </Compile>
     <Compile Include="classlist.aspx.designer.cs">
       <DependentUpon>classlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassInfo.aspx.cs">
+      <DependentUpon>ClassInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassInfo.aspx.designer.cs">
+      <DependentUpon>ClassInfo.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
