@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="main-nav">
-            <a><img src="/content/humberlogo.png" /></a>
+            <a><img src="/content/logo-color-new.png" /></a>
             <h2 id="title">ADMINISTRATION</h2>
             <div id="header-nav">
             <ul>
