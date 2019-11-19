@@ -246,7 +246,7 @@ namespace Assignment_2ab
                 //read through the result set
                 while (resultset.Read())
                 {
-                    //information that will store the class
+                    //information that will store the teacher
                     Dictionary<String, String> Teacher = new Dictionary<String, String>();
 
                     //Look at each column in the result set row, add both the column name and the column value to our teachers dictionary

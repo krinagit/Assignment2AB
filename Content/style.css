@@ -55,12 +55,15 @@ div[id$="_nav"] {
 .col4, .col4last {
     float: left;
     width: 21.73%;
-    margin-right: 4.34%;
+    /*margin-right: 4.34%;*/
 }
 
 .col4last {
     margin-right: 0%;
+    text-align: center;
 }
+
+
 
 
 
