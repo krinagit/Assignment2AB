@@ -231,7 +231,7 @@ namespace Assignment_2ab
             Dictionary<String, String> teacherdata = new Dictionary<String, String>();
             try
             {
-                string query = "SELECT * FROM TEACHERS";
+                string query = "SELECT * FROM TEACHERS where TEACHERID=" + id;
 
                 Debug.WriteLine("Connection Initialized...");
                 //open the db connection
@@ -249,7 +249,7 @@ namespace Assignment_2ab
                     //information that will store the class
                     Dictionary<String, String> Teacher = new Dictionary<String, String>();
 
-                    //Look at each column in the result set row, add both the column name and the column value to our Class dictionary
+                    //Look at each column in the result set row, add both the column name and the column value to our teachers dictionary
                     for (int i = 0; i < resultset.FieldCount; i++)
                     {
                         Debug.WriteLine("Attempting to transfer data of " + resultset.GetName(i));
@@ -257,7 +257,7 @@ namespace Assignment_2ab
                         Teacher.Add(resultset.GetName(i), resultset.GetString(i));
 
                     }
-                    //Add the class to the list of teachers
+                    //Add the teacher to the list of teachers
                     Teachers.Add(Teacher);
                 }
 
