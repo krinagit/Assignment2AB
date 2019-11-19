@@ -2,9 +2,9 @@
 <asp:Content ID="students_list" ContentPlaceHolderID="MainContent" runat="server">
     <h1>STUDENTS</h1>
     <div class ="modify-interface">
-        <asp:Button runat="server" text="Add" />
-        <asp:Button runat="server" text="Update" />
-        <asp:Button runat="server" text="Delete" />
+        <asp:Button runat="server" text="Add" PostBackUrl="~/InsertStudent.aspx" />
+        <asp:Button runat="server" text="Update" PostBackUrl="~/UpdateStudent.aspx" />
+        <asp:Button runat="server" text="Delete" PostBackUrl="~/DeleteStudent.aspx"/>
     </div>
     <div id="student_nav">
         <asp:label for="student_search" runat="server">SEARCH:</asp:label>
