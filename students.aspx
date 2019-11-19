@@ -14,8 +14,8 @@
         <div id="sql_debugger" runat="server"></div>
     </div>
 
-    <div class="_table" runat="server">
-        <div class="listitem">
+    <div class="_table" runat="server" >
+        <div class="listitem" id="students_header">
             <div class="col4">FIRST NAME</div>
             <div class="col4">LAST NAME</div>
             <div class="col4">STUDENT NAME</div>

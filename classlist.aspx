@@ -21,7 +21,7 @@
     </div>
 
     <div class="_table" runat="server">
-        <div class="listitem">
+        <div class="listitem" id="classes_header">
             <div class="col4">CLASS CODE</div>
             <div class="col4">CLASS NAME</div>
             <div class="col4">START DATE</div>
