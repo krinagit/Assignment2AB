@@ -37,8 +37,17 @@ footer {
     }
 
 .listitem:hover {
-    background: #e9d898;
+    background: #99d0f2;
     }
+    .listitem[id$="_header"] {
+        background-color:darkcyan;
+        color:white;
+        font-weight:bold;
+    }
+div[id$="_nav"] {
+    margin-bottom:10px;
+}
+
 /*sandbox.bittsdevelopment.com/colcalc
     columns : 4
     gutter/column ratio : 0.2
