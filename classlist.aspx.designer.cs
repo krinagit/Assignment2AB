@@ -22,15 +22,6 @@ namespace Assignment_2ab {
         protected global::System.Web.UI.WebControls.TextBox classes_search;
         
         /// <summary>
-        /// semester control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList semester;
-        
-        /// <summary>
         /// sql_debugger control.
         /// </summary>
         /// <remarks>
@@ -38,6 +29,15 @@ namespace Assignment_2ab {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl sql_debugger;
+        
+        /// <summary>
+        /// semester control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList semester;
         
         /// <summary>
         /// classes_result control.

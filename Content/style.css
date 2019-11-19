@@ -55,12 +55,15 @@ div[id$="_nav"] {
 .col4, .col4last {
     float: left;
     width: 21.73%;
-    margin-right: 4.34%;
+    /*margin-right: 4.34%;*/
 }
 
 .col4last {
     margin-right: 0%;
+    text-align: center;
 }
+
+
 
 
 
@@ -126,11 +129,23 @@ a {
 }
 
 /* MAIN CONTENT*/
+#student_nav,#teachers_nav,#classes_nav{
+    /*align-content:center;*/
+    margin-left:15%;
+}
+.students_search_box, .teachers_search_box, .classes_search_box {
+    width: 20%;
+}
+#classes_nav2{
+    margin-left:0%;
+    margin-bottom:1%;
+}
 .modify-interface {
-    margin: 2em;
-    position: absolute;
-    top: 11em;
-    right: 4em;
+    margin-top: 0%;
+    /*position: absolute;*/
+    float:right;
+    /*top: 11em;*/
+    /*right: 4em;*/
 }
 .main-content {
     text-align: center;
@@ -187,9 +202,7 @@ footer {
 }
 
 
-@media screen and (max-width:768px){
 
-}
 
                                    
 
