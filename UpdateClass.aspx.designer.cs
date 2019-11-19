@@ -10,7 +10,7 @@
 namespace Assignment_2ab {
     
     
-    public partial class updateclass {
+    public partial class WebForm4 {
         
         /// <summary>
         /// update_classid control.

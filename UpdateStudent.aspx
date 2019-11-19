@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="UpdateStudent.aspx.cs" Inherits="Assignment_2ab.WebForm4" %>
 <asp:Content ID="updatestudent" ContentPlaceHolderID="MainContent" runat="server">
     <h1>UPDATE STUDENT</h1>
+    <div class="operations">
     <div>
         <label>Student to update (Insert student ID): </label>
         <asp:TextBox runat="server" ID="update_sclassid" ></asp:TextBox>
@@ -19,5 +20,6 @@
     </div>
     <div>
         <asp:Button runat="server" text="Update" PostBackUrl="~/students.aspx"  />
+    </div>
     </div>
 </asp:Content>

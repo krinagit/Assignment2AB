@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="InsertClass.aspx.cs" Inherits="Assignment_2ab.WebForm4" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h1>INSERT NEW CLASS</h1>
+    <div class="operations">
     <div>
         <label>Insert class code:</label>
         <asp:TextBox runat="server" ID="insert_classcode" ></asp:TextBox>
@@ -23,5 +24,6 @@
     </div>
     <div>
         <asp:Button runat="server" text="Add" PostBackUrl="~/classlist.aspx"  />
+    </div>
     </div>
 </asp:Content>

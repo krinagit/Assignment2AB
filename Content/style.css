@@ -17,7 +17,7 @@ footer {
 
 
 /*CSS FOR TABLE-LIKE STYLING*/
-#students_result {
+#students_result, #classes_result, #teacherrs_result{
     width: 100%;
 }
 
@@ -126,6 +126,9 @@ a {
 .main-content {
     text-align: center;
 }
+/*div .operations {
+    text-align : left;
+}*/
 
 .students, .teachers, .classes {
     color: aliceblue;

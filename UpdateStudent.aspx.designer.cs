@@ -13,7 +13,7 @@ namespace Assignment_2ab {
     public partial class WebForm4 {
         
         /// <summary>
-        /// update_classid control.
+        /// update_sclassid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
@@ -22,7 +22,7 @@ namespace Assignment_2ab {
         protected global::System.Web.UI.WebControls.TextBox update_sclassid;
         
         /// <summary>
-        /// update_column control.
+        /// update_scolumn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
@@ -31,7 +31,7 @@ namespace Assignment_2ab {
         protected global::System.Web.UI.WebControls.DropDownList update_scolumn;
         
         /// <summary>
-        /// insert_update control.
+        /// insert_supdate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
