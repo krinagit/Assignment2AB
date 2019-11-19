@@ -21,7 +21,7 @@ namespace Assignment_2ab
             {
                 search_key = teachers_search.Text;
             }
-            string query = "select concat(TEACHERFNAME,\", \",TEACHERLNAME) AS 'TEACHERNAME',EMPLOYEENUMBER,HIREDATE,SALARY * from TEACHERS ";
+            string query = "select TEACHERID, concat(TEACHERFNAME,\", \",TEACHERLNAME) AS 'TEACHERNAME',EMPLOYEENUMBER,HIREDATE,SALARY  from TEACHERS ";
 
             if (search_key != "")
             {
@@ -32,7 +32,7 @@ namespace Assignment_2ab
                 query += " OR HIREDATE LIKE '%" + search_key + "%'";
                 query += " OR SALARY LIKE '%" + search_key + "%'";
             }
-            sql_debugger.InnerHtml += query; 
+           
 
             var db = new Schooldb();
             List<Dictionary<String, String>> rs = db.List_Query(query);
