@@ -2,11 +2,11 @@
 <asp:Content ID="deletestudent" ContentPlaceHolderID="MainContent" runat="server">
     <h1>DELETE STUDENT</h1>
      <div class="operations">
-    <div>
-        <label>Student to delete (Insert student ID): </label>
+    <div class="space">
+        <label>Insert student ID: </label>
         <asp:TextBox runat="server" ID="delete_studentid" ></asp:TextBox>
     </div>
-    <div>
+    <div class="space">
         <asp:Button runat="server" text="Delete" PostBackUrl="~/students.aspx"  />
     </div>
     </div>
