@@ -153,6 +153,16 @@ a {
     background: #03738C;
 }
 
+._table a {
+    color: #03738C;
+
+}
+._table a:hover {
+        color: #03738C;
+        font-weight: bold;
+
+}
+
 
 
 footer {
