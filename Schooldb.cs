@@ -7,7 +7,7 @@ using System.Web;
 
 namespace Assignment_2ab
 {
-    //We are taking this code as a refference from inclass example taught by Christine during our lectures for our assignment2ab
+    //REFERENCE:We are taking this code as a reference from inclass example taught by Christine during our lectures for our assignment2ab
 
     public class Schooldb
     {
@@ -246,7 +246,7 @@ namespace Assignment_2ab
                 //read through the result set
                 while (resultset.Read())
                 {
-                    //information that will store the class
+                    //information that will store the teacher
                     Dictionary<String, String> Teacher = new Dictionary<String, String>();
 
                     //Look at each column in the result set row, add both the column name and the column value to our teachers dictionary
