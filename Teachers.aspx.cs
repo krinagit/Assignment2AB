@@ -42,7 +42,7 @@ namespace Assignment_2ab
                 teachers_result.InnerHtml += "<div class=\"col4\">" + teacherid + "</div>";
 
                 string teacherfname = row["TEACHERFNAME"];
-                teachers_result.InnerHtml += "<div class=\"col4\"><a href=\"ShowTeacher.aspx?teacherid=" + teacherid + "\">" + teacherfname + "</a></div>";
+                teachers_result.InnerHtml += "<div class=\"col4\"><a href=\"teacherData.aspx?teacherid=" + teacherid + "\">" + teacherfname + "</a></div>";
 
                 string teacherlname = row["TEACHERLNAME"];
                 teachers_result.InnerHtml += "<div class=\"col4\">" + teacherlname + "</div>";

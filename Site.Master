@@ -11,7 +11,7 @@
     <header>
         <div class="main-nav">
             <a><img src="/content/logo-color-new.png" /></a>
-            <h2 id="title">ADMINISTRATION</h2>
+            <h2 id="title">HUMBER ADMINISTRATION</h2>
             <div id="header-nav">
             <ul>
                 <li><a href="Home.aspx">Home</a></li>

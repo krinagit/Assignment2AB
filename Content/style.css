@@ -83,13 +83,15 @@ header {
     color: #012840;
     font-size: 1em;
     position: relative;
-    left: 5em;
+    left: 0.5em;
 }
 
 img {
     position: relative;
-    margin: 0.5em;
-    width: 25%;
+    margin: 0;
+    margin-left: 2.5em;
+    margin-top:0.5em;
+    width: 10%;
 }
 
 /*NAVIGATION*/
