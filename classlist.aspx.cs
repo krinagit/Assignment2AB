@@ -22,17 +22,18 @@ namespace Assignment_2ab
             {
                 search_key = classes_search.Text;
                 Semester = semester.SelectedValue;
+
   
             }
             string query = "select * from CLASSES";
 
             if (Semester != "all")
             {
-                query += " WHERE MONTH(STARTDATE) = " + Semester;
+                query += " WHERE (MONTH(STARTDATE) = " + Semester +")";
 
             //INITIAL WHERE SO BOTH  SEARCH AND SEMESTER CAN RUN WITHOUT REPEATING THE WHERE IN THE SEARCH KEY IF
             } else {
-                query += " WHERE MONTH(STARTDATE) =01 OR MONTH(STARTDATE) =09 ";
+                query += " WHERE (MONTH(STARTDATE) =01 OR MONTH(STARTDATE) =09) ";
             }
 
             if (search_key != "")
@@ -41,7 +42,7 @@ namespace Assignment_2ab
                 query += " OR CLASSCODE LIKE '%" + search_key + "%'";
                 query += " OR CLASSNAME LIKE '%" + search_key + "%')";
             }
-            //sql_debugger.InnerHtml += query; 
+            //sql_debugger.InnerHtml = query; 
             var db = new Schooldb();
             List<Dictionary<String, String>> rs = db.List_Query(query);
             foreach (Dictionary<String, String> row in rs)

@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h1>CLASSES</h1>
     <div class ="modify-interface">
-        <asp:Button runat="server" text="Add" />
+        <asp:Button runat="server" text="Add" PostBackUrl="~/InsertClass.aspx" />
         <asp:Button runat="server" text="Update" />
         <asp:Button runat="server" text="Delete" />
     </div>

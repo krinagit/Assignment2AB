@@ -128,7 +128,6 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\style.css" />
-    <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -143,6 +142,8 @@
     <Content Include="Home.aspx" />
     <Content Include="classlist.aspx" />
     <Content Include="ClassInfo.aspx" />
+    <Content Include="UpdateClass.aspx" />
+    <Content Include="InsertClass.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Content\logo-color-new.png" />
     <Content Include="Scripts\bootstrap.js" />
@@ -181,20 +182,19 @@
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
-    <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateClass.aspx.cs">
+      <DependentUpon>UpdateClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateClass.aspx.designer.cs">
+      <DependentUpon>UpdateClass.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Schooldb.cs" />
@@ -211,13 +211,6 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Site.Mobile.Master.cs">
-      <DependentUpon>Site.Mobile.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Site.Mobile.Master.designer.cs">
-      <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="students.aspx.cs">
       <DependentUpon>students.aspx</DependentUpon>
@@ -267,6 +260,13 @@
     </Compile>
     <Compile Include="ClassInfo.aspx.designer.cs">
       <DependentUpon>ClassInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InsertClass.aspx.cs">
+      <DependentUpon>InsertClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InsertClass.aspx.designer.cs">
+      <DependentUpon>InsertClass.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
