@@ -21,7 +21,7 @@ namespace Assignment_2ab
             {
                 search_key = teachers_search.Text;
             }
-            string query = "select * from TEACHERS";
+            string query = "select concat(TEACHERFNAME,\", \",TEACHERLNAME) AS 'TEACHERNAME',EMPLOYEENUMBER,HIREDATE,SALARY * from TEACHERS ";
 
             if (search_key != "")
             {
@@ -32,6 +32,7 @@ namespace Assignment_2ab
                 query += " OR HIREDATE LIKE '%" + search_key + "%'";
                 query += " OR SALARY LIKE '%" + search_key + "%'";
             }
+            sql_debugger.InnerHtml += query; 
 
             var db = new Schooldb();
             List<Dictionary<String, String>> rs = db.List_Query(query);
@@ -39,13 +40,13 @@ namespace Assignment_2ab
             {
                 teachers_result.InnerHtml += "<div class=\"listitem\">";
                 string teacherid = row["TEACHERID"];
-                teachers_result.InnerHtml += "<div class=\"col4\">" + teacherid + "</div>";
+              //  teachers_result.InnerHtml += "<div class=\"col4\">" + teacherid + "</div>";
 
-                string teacherfname = row["TEACHERFNAME"];
-                teachers_result.InnerHtml += "<div class=\"col4\"><a href=\"teacherData.aspx?teacherid=" + teacherid + "\">" + teacherfname + "</a></div>";
+                string teachername = row["TEACHERNAME"];
+                teachers_result.InnerHtml += "<div class=\"col4\"><a href=\"teacherData.aspx?teacherid=" + teacherid + "\">" + teachername + "</a></div>";
 
-                string teacherlname = row["TEACHERLNAME"];
-                teachers_result.InnerHtml += "<div class=\"col4\">" + teacherlname + "</div>";
+                //string teacherlname = row["TEACHERLNAME"];
+                //teachers_result.InnerHtml += "<div class=\"col4\">" + teacherlname + "</div>";
 
                 string employeenumber = row["EMPLOYEENUMBER"];
                 teachers_result.InnerHtml += "<div class=\"col4\">" + employeenumber + "</div>";

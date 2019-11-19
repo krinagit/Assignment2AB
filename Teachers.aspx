@@ -16,9 +16,9 @@
 
     <div class="_table" runat="server">
         <div class="listitem">
-            <div class="col4">TEACHER ID</div>
-            <div class="col4">TEACHER FIRST NAME</div>
-            <div class="col4">TEACHER LAST NAME</div>
+            <%-- <div class="col4">TEACHER ID</div> --%>
+            <div class="col4">TEACHER NAME</div>
+          <%--   <div class="col4">TEACHER LAST NAME</div> --%>
             <div class="col4">EMPLOYEE NUMBER</div>
             <div class="col4">HIREDATE</div>
             <div class="col4last">SALARY</div>
