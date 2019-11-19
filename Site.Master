@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 <head runat="server">
     <title>Humber Administration</title>
     <link rel="stylesheet" type="text/css" href="/Content/style.css" />

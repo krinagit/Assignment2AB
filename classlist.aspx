@@ -8,16 +8,25 @@
     </div>
     <div id="classes_nav">
         <asp:label for="classes_search" runat="server">SEARCH:</asp:label>
-        <asp:TextBox ID="classes_search" runat="server"></asp:TextBox>
+        <asp:TextBox ID="classes_search" Class="classes_search_box" runat="server"></asp:TextBox>
         <asp:Button runat="server" text="submit" />
+        <%/*<asp:label for="semester" runat="server">Choose a semester:</asp:label>
+        <asp:DropDownList runat="server" id="semester" AutoPostBack="true">
+            <asp:ListItem Text="All" Value="all"></asp:ListItem>
+            <asp:ListItem Text="Fall" Value="09"></asp:ListItem>
+            <asp:ListItem Text="Winter" Value="01"></asp:ListItem>
+        </asp:DropDownList>*/%>
+
+        <div id="sql_debugger" runat="server"></div>
+    </div>
+
+    <div id="classes_nav2">
         <asp:label for="semester" runat="server">Choose a semester:</asp:label>
         <asp:DropDownList runat="server" id="semester" AutoPostBack="true">
             <asp:ListItem Text="All" Value="all"></asp:ListItem>
             <asp:ListItem Text="Fall" Value="09"></asp:ListItem>
             <asp:ListItem Text="Winter" Value="01"></asp:ListItem>
         </asp:DropDownList>
-
-        <div id="sql_debugger" runat="server"></div>
     </div>
 
     <div class="_table" runat="server">

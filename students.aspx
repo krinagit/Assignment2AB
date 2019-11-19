@@ -8,7 +8,7 @@
     </div>
     <div id="student_nav">
         <asp:label for="student_search" runat="server">SEARCH:</asp:label>
-        <asp:TextBox ID="student_search" runat="server"></asp:TextBox>
+        <asp:TextBox ID="student_search" Class="students_search_box" runat="server"></asp:TextBox>
         <asp:Button runat="server" text="submit" />
 
         <div id="sql_debugger" runat="server"></div>
