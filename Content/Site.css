@@ -28,4 +28,10 @@ textarea {
     .body-content {
         padding: 0;
     }
+    .btn {
+        font-size: 0.875em;
+        display: block;
+        left: -60px;
+        margin-top: 35px;
+    }
 }
