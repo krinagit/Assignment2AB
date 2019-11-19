@@ -1,8 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="classlist.aspx.cs" Inherits="Assignment_2ab.WebForm2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h1>CLASSES</h1>
+    <div class ="modify-interface">
+        <asp:Button runat="server" text="Add" />
+        <asp:Button runat="server" text="Update" />
+        <asp:Button runat="server" text="Delete" />
+    </div>
     <div id="classes_nav">
-        
         <asp:label for="classes_search" runat="server">SEARCH:</asp:label>
         <asp:TextBox ID="classes_search" runat="server"></asp:TextBox>
         <asp:Button runat="server" text="submit" />

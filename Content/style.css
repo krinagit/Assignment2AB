@@ -117,6 +117,12 @@ a {
 }
 
 /* MAIN CONTENT*/
+.modify-interface {
+    margin: 2em;
+    position: absolute;
+    top: 11em;
+    right: 4em;
+}
 .main-content {
     text-align: center;
 }

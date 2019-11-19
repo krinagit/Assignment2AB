@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="teachers.aspx.cs" Inherits="Assignment_2ab.Teachers" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h1>TEACHERS</h1>
+    <div class ="modify-interface">
+        <asp:Button runat="server" text="Add" />
+        <asp:Button runat="server" text="Update" />
+        <asp:Button runat="server" text="Delete" />
+    </div>
     <div id="teachers_nav">
         <asp:label for="teachers_search" runat="server">SEARCH:</asp:label>
         <asp:TextBox ID="teachers_search" runat="server"></asp:TextBox>
