@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="main-nav">
-            <a><img src="/content/logo-color-new.png" /></a>
+            <a href="Home.aspx"><img src="/content/logo-color-new.png" /></a>
             <h2 id="title">HUMBER ADMINISTRATION</h2>
             <div id="header-nav">
             <ul>
