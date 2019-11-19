@@ -1,27 +1,23 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="UpdateClass.aspx.cs" Inherits="Assignment_2ab.WebForm4" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h1>INSERT NEW CLASS</h1>
+<asp:Content ID="updateclass" ContentPlaceHolderID="MainContent" runat="server">
+    <h1>UPDATE CLASS</h1>
     <div>
-        <label>Insert Class Code:</label>
-        <asp:TextBox runat="server" ID="insert_classcode" ></asp:TextBox>
+        <label>Class to update (Insert class ID): </label>
+        <asp:TextBox runat="server" ID="update_classid" ></asp:TextBox>
     </div>
     <div>
-        <label>Insert Teacher ID: </label>
-        <asp:TextBox runat="server" ID="insert_teacherid" ></asp:TextBox>
-    </div>
-    <div>
-    <label>Choose Semester: </label>
-        <asp:DropDownList runat="server" ID="insert_semester">
-            <asp:ListItem Text="Fall 2018" Value="2018-09-04"></asp:ListItem>
-            <asp:ListItem Text="Winter 2019" Value="2019-01-08"></asp:ListItem>
-            <asp:ListItem Text="Fall 2019" Value="2019-09-04"></asp:ListItem>
+    <label>Column to update: </label>
+        <asp:DropDownList runat="server" ID="update_column">
+            <asp:ListItem Text="Teacher ID" Value="teacherid"></asp:ListItem>
+            <asp:ListItem Text="Start Date" Value="startdate"></asp:ListItem>
+            <asp:ListItem Text="Finish Date" Value="finishdate"></asp:ListItem>
         </asp:DropDownList>
     </div>
     <div>
-        <label>Insert Class Name:</label>
-        <asp:TextBox runat="server" ID="insert_classname" ></asp:TextBox>
+        <label>New value: </label>
+        <asp:TextBox runat="server" ID="insert_update" ></asp:TextBox>
     </div>
     <div>
-        <asp:Button runat="server" text="Add" PostBackUrl="~/classlist.aspx"  />
+        <asp:Button runat="server" text="Update" PostBackUrl="~/classlist.aspx"  />
     </div>
 </asp:Content>

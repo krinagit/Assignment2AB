@@ -10,33 +10,51 @@
 namespace Assignment_2ab {
     
     
-    public partial class updateclass {
+    public partial class WebForm4 {
         
         /// <summary>
-        /// update_classid control.
+        /// insert_teacherfname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox update_classid;
+        protected global::System.Web.UI.WebControls.TextBox insert_teacherfname;
         
         /// <summary>
-        /// update_column control.
+        /// insert_teacherlname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList update_column;
+        protected global::System.Web.UI.WebControls.TextBox insert_teacherlname;
         
         /// <summary>
-        /// insert_update control.
+        /// insert_teachernum control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox insert_update;
+        protected global::System.Web.UI.WebControls.TextBox insert_teachernum;
+        
+        /// <summary>
+        /// insert_hiredate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox insert_hiredate;
+        
+        /// <summary>
+        /// insert_salary control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox insert_salary;
     }
 }

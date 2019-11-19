@@ -128,6 +128,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\style.css" />
+    <Content Include="DeleteTeacher.aspx" />
+    <Content Include="DeleteStudent.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -142,6 +144,11 @@
     <Content Include="Home.aspx" />
     <Content Include="classlist.aspx" />
     <Content Include="ClassInfo.aspx" />
+    <Content Include="DeleteClass.aspx" />
+    <Content Include="InsertTeacher.aspx" />
+    <Content Include="InsertStudent.aspx" />
+    <Content Include="UpdateTeacher.aspx" />
+    <Content Include="UpdateStudent.aspx" />
     <Content Include="UpdateClass.aspx" />
     <Content Include="InsertClass.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -186,8 +193,57 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="DeleteTeacher.aspx.cs">
+      <DependentUpon>DeleteTeacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteTeacher.aspx.designer.cs">
+      <DependentUpon>DeleteTeacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteStudent.aspx.cs">
+      <DependentUpon>DeleteStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteStudent.aspx.designer.cs">
+      <DependentUpon>DeleteStudent.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteClass.aspx.cs">
+      <DependentUpon>DeleteClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteClass.aspx.designer.cs">
+      <DependentUpon>DeleteClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InsertTeacher.aspx.cs">
+      <DependentUpon>InsertTeacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InsertTeacher.aspx.designer.cs">
+      <DependentUpon>InsertTeacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InsertStudent.aspx.cs">
+      <DependentUpon>InsertStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InsertStudent.aspx.designer.cs">
+      <DependentUpon>InsertStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateTeacher.aspx.cs">
+      <DependentUpon>UpdateTeacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateTeacher.aspx.designer.cs">
+      <DependentUpon>UpdateTeacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateStudent.aspx.cs">
+      <DependentUpon>UpdateStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateStudent.aspx.designer.cs">
+      <DependentUpon>UpdateStudent.aspx</DependentUpon>
     </Compile>
     <Compile Include="UpdateClass.aspx.cs">
       <DependentUpon>UpdateClass.aspx</DependentUpon>

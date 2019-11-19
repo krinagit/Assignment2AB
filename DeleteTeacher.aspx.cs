@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Assignment_2ab
 {
-    public partial class updateclass : System.Web.UI.Page
+    public partial class deleteteacher : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

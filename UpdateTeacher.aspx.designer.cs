@@ -10,33 +10,33 @@
 namespace Assignment_2ab {
     
     
-    public partial class updateclass {
+    public partial class WebForm4 {
         
         /// <summary>
-        /// update_classid control.
+        /// update_tclassid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox update_classid;
+        protected global::System.Web.UI.WebControls.TextBox update_tclassid;
         
         /// <summary>
-        /// update_column control.
+        /// update_tcolumn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList update_column;
+        protected global::System.Web.UI.WebControls.DropDownList update_tcolumn;
         
         /// <summary>
-        /// insert_update control.
+        /// insert_tupdate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox insert_update;
+        protected global::System.Web.UI.WebControls.TextBox insert_tupdate;
     }
 }

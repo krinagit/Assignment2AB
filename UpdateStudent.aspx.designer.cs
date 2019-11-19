@@ -10,7 +10,7 @@
 namespace Assignment_2ab {
     
     
-    public partial class updateclass {
+    public partial class WebForm4 {
         
         /// <summary>
         /// update_classid control.
@@ -19,7 +19,7 @@ namespace Assignment_2ab {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox update_classid;
+        protected global::System.Web.UI.WebControls.TextBox update_sclassid;
         
         /// <summary>
         /// update_column control.
@@ -28,7 +28,7 @@ namespace Assignment_2ab {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList update_column;
+        protected global::System.Web.UI.WebControls.DropDownList update_scolumn;
         
         /// <summary>
         /// insert_update control.
@@ -37,6 +37,6 @@ namespace Assignment_2ab {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox insert_update;
+        protected global::System.Web.UI.WebControls.TextBox insert_supdate;
     }
 }
