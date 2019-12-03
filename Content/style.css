@@ -63,12 +63,6 @@ div[id$="_nav"] {
     text-align: center;
 }
 
-
-
-
-
-
-
 /*GENERAL CSS*/
 html {
     font-family: Arial, Helvetica, sans-serif;
@@ -192,9 +186,6 @@ a {
         font-weight: bold;
 
 }
-
-
-
 footer {
     margin-top: 50px;
     margin-bottom: 50px;
