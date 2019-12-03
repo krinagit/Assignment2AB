@@ -128,8 +128,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\style.css" />
-    <Content Include="Content\wireFrame\teacher2.jpg" />
-    <Content Include="Content\wireFrame\teacher1.jpg" />
+    <Content Include="Content\wireFrame\teacher2%28Krinaben%29.jpg" />
+    <Content Include="Content\wireFrame\teacher1%28Krinaben%29.jpg" />
     <Content Include="DeleteTeacher.aspx" />
     <Content Include="DeleteStudent.aspx" />
     <Content Include="favicon.ico" />
