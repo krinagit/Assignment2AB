@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Assignment_2ab
 {
-    //Reference:We are taking this code from inclass example taught by Christine during our lectures tuesday nov 12th for our assignment2ab
+    //I am taking this code as a refference from inclass example taught by Christine during our lectures for our assignment2ab
     public partial class Teachers : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
